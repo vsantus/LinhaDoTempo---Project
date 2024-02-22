@@ -1,0 +1,16 @@
+PROJETO LINHA DO TEMPO - web
+
+descrever quem eu sou em cada área da minha vida, meus hobbies, afinidades, gostos, redes sociais, objetivo de vida e carreira.
+
+--cada área uma sessão
+--desenvolver com html css js.
+primeiro passo, montar estrutura html e criar repositorio github
+
+estrutura:
+header topo com nav, nele contém minhas redes 
+
+(DECIDIR QUANTAS ÁREAS IRÃO ENTRAR) 6?
+section com main porque irá entrar o conteudo principal da pagina, no caso os "quadrados" com cada área
+segundo section com div apresentando em maior tamanho as áreas
+
+footer, rodaré, ver oq vai entrar
