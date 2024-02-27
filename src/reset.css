@@ -10,6 +10,10 @@ a{
     color: white;
 }
 
+a:hover{
+    color: #1d135b;
+}
+
 html{
     font-size: 62.5%;
 }

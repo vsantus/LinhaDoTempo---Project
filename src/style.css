@@ -2,13 +2,14 @@
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: blueviolet;
+    background-color: #636363;
     justify-content: space-between;
 }
 
 .cabecalho .logo {
     display: flex;
     margin: 10px;
+    margin-left: 50px;
     width: 50%;
     justify-content: flex-start;
     align-items: center;
@@ -21,21 +22,30 @@
 .cabecalho .menu {
     display: flex;
     width: 50%;
-    background-color: darkslateblue;
     align-items: center;
     justify-content: end;
     padding: 20px;
-
+    margin-right: 50px;
 }
 
 .cabecalho .menu ul {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 
 }
 
-.cabecalho .menu ul a:hover {
-    color: black;
+.cabecalho .menu ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cabecalho .menu ul li a:hover {
+    font-size: 20px;
+    animation-duration: 3s;
+    transition-delay: 0.2s; 
+    text-align: center;
 }
 
 .principal {
@@ -44,7 +54,6 @@
     height: 450px;
     display: flex;
     justify-content: space-between;
-    background-color: cornflowerblue;
 }
 
 .principal .perfis {
@@ -67,13 +76,13 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 8px solid #464646;
 }
 
 .principal .nome-texto {
     margin-top: 150px;
     width: 50%;
     height: 180px;
-    background-color: darkslategrey;
     justify-content: flex-end;
 }
 
@@ -92,38 +101,137 @@
     justify-content: center;
     text-align: center;
     font-size: 15px;
-    background-color: grey;
+    background-color: #292929;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
 }
 
 .areas {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 150px 150px;
-    background-color: green;
-    border: 1px solid black;
-    padding: 10px;
-    gap: 10px;
+    background-color: #292929;
+    padding: 100px;
+    gap: 30px;
+    position: relative;
 
 }
 
 .areas .quadrado-area {
     background-color: darkolivegreen;
-    border: 1px solid black;
+    border: 2px solid none;
+    stroke: #464646;
+    border-radius: 30px;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.areas .quadrado-area:hover {
+    -xpedu-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.areas .quad1 {
+    background-color: #c6d8f0c0;
+}
+
+.areas .quad2 {
+    background-color: #b0e0e6cb;
+}
+
+.areas .quad3 {
+    background-color: #ffc6c4c5;
+}
+
+.areas .quad4 {
+    background-color: #d8bfd8d2;
+}
+
+.areas .quad5 {
+    background-color: #fbffbfce;
+}
+
+.areas .quad6 {
+    background-color: #ccff99d0;
+}
+
+.divisoria {
+    display: flex;
+    width: auto;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+}
+
+.divisoria img {
+    height: 60px;
+    animation: seta 0.6s infinite alternate ease-in-out;
+
+
+}
+
+@-webkit-keyframes seta {
+
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.8em);
+        opacity: 0.9;
+    }
 }
 
 .areas-extenso {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: auto;
-    padding: 10px;
-    gap: 10px;
-    background-color: darkslateblue;
+    padding: 20px;
+    gap: 40px;
+    background-color: #292929;
 }
 
 .areas-extenso .retangulo-area {
-    width: auto;
-    height: 100px;
+    width: 90%;
+    height: 300px;
     background-color: darkkhaki;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid black;
+    border-radius: 30px;
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: #636363;
+
+}
+
+.rodape-container {
+    display: flex;
+}
+
+.rodape-container .contatos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.rodape-container .cursos {
+    display: flex;
+    flex-direction: column;
 }

@@ -8,10 +8,13 @@
 
     <link rel="stylesheet" href="src/reset.css">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- cabeçalho -->
+   
     <header class="cabecalho">
 
         <div class="logo">
@@ -20,20 +23,19 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="#">instagram</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">GitHub</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
             </ul>
         </nav>
 
     </header>
 
-    <!-- breve apresentação com imagem vsantos -->
     <main class="principal">
         <div class="perfis">
             <img src="src/images/vsantos-persona.jpeg" alt="vinicius-personagem" class="vsantos-personagem">
         </div>
-        <!-- fazer em js ou no css para quando clicar alterar entre os perfis  -->
+  
         <div class="nome-texto">
             <h1>Oi, eu sou Vinícius Santos</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia est illum praesentium eveniet magni.
@@ -42,49 +44,59 @@
         </div>
     </main>
 
-    <!-- uma sessao para cada area em quadrado menor, fazer um escopo para saber quais areas vao entrar no projeto -->
-
-
     <div class="titulo-areas">
         <h1>
             Quem é Vsantos?
         </h1> <br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque ab culpa modi, ducimus sit minima
-            laudantium suscipit quisquam minus. Facilis ipsum nihil accusantium voluptatem quo doloribus molestiae
-            impedit tenetur?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque ab culpa modi, ducimus sit minima
+                laudantium suscipit quisquam minus. Facilis ipsum nihil accusantium voluptatem quo doloribus molestiae
+                impedit tenetur?</p>
     </div>
 
     <article class="areas">
-        <div class="quadrado-area"> tecnologia </div>
-        <div class="quadrado-area"> cozinhar </div>
-        <div class="quadrado-area"> jogos </div>
-        <div class="quadrado-area"> underground estilo</div>
-        <div class="quadrado-area"> rap </div>
-        <div class="quadrado-area"> anime</div>
+        <div class="quadrado-area quad1">  </div>
+        <div class="quadrado-area quad2">  </div>
+        <div class="quadrado-area quad3">  </div>
+        <div class="quadrado-area quad4">  </div>
+        <div class="quadrado-area quad5">  </div>
+        <div class="quadrado-area quad6"> </div>
     </article>
 
-    colocar seta igual da langind  da AEG espaço "grande"
+    <div class="divisoria"> <img src="src/images/setaV.png" alt="seta"></div>
 
     <section class="areas-extenso">
-        <div class="retangulo-area"> tecnologia </div>
-        <div class="retangulo-area"> cozinhar </div>
-        <div class="retangulo-area"> jogos </div>
-        <div class="retangulo-area"> underground estilo</div>
-        <div class="retangulo-area"> rap </div>
-        <div class="retangulo-area"> anime</div>
+        <div class="retangulo-area retan1"> tecnologia </div>
+        <div class="retangulo-area retan2"> cozinhar </div>
+        <div class="retangulo-area retan3"> jogos </div>
+        <div class="retangulo-area retan4"> underground estilo</div>
+        <div class="retangulo-area retan5"> rap </div>
+        <div class="retangulo-area retan6"> anime</div>
     </section>
-
-    <!-- decidir rodapé -->
 
     <footer class="rodape">
 
-        Desenvolvido e Criado por : Vinicius Santos (link linkedin)
-        Contatos: meu ig, ig loja, zapzap
-        Quer aprender a investir?: cursos (kiwify)
-        São Paulo-ABC / 2024
+        <h3>Desenvolvido e Criado por <a href="#" target="_blank"> Vinicius Santos </a></h3>
+
+        <div class="rodape-container">
+
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Desapegold</a>
+                <a href="#" target="_blank">Whatsapp</a>
+            </div>
+
+            <div class="cursos">
+                <h3>Quer Aprender a Investir?</h3>
+                <a href="https://kiwify.app/velJGLO?afid=E7W2Rw4j" target="_blank">Investidor em 1 Hora</a>
+                <a href="https://kiwify.app/h97KMoR?afid=vqHb5Z6y" target="_blank">Mapa da Mente Milionária</a>
+            </div>
+
+        </div>
+
+        <p class="localizacao"> São Paulo-ABC 2024 </p>
 
     </footer>
-
 </body>
 
 </html>
