@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: #636363;
+    background-color: var(--header-e-rodape);
     justify-content: space-between;
 }
 
@@ -56,6 +56,8 @@
     height: 450px;
     display: flex;
     justify-content: space-between;
+    background: url('images/estrelas.svg') no-repeat ;
+    background-size: cover; 
 }
 
 .principal .perfis {
@@ -78,20 +80,78 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 8px solid #464646;
+    border: 8px solid #5c53ad;
 }
 
 .principal .nome-texto {
     margin-top: 150px;
-    padding-right: 20px;
+    padding-right: 35px;
     width: 50%;
     height: 180px;
     text-align: justify;
 }
 
-
-.principal .nome-texto h1 {
+.principal .nome-texto .digitando{
     font-size: 30px;
+    width: 450px;
+  
+}
+
+.principal .nome-texto .digitando span{
+  position: relative;
+  
+}
+
+.principal .nome-texto .digitando span::before{
+    content: "";
+    color: white;
+    animation: nomes 20s infinite;
+    color: #85ee52;
+}
+
+.principal .nome-texto .digitando span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #85ee52;
+    right: -10px;
+    animation: cursor .9s infinite, digitando 20s steps(80) infinite;
+    width: calc(100% + 14px);
+    background-color: black ;
+}
+
+@keyframes digitando{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 14px);
+    }  
+
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid black;
+    }
+}
+
+@keyframes nomes{
+    0%, 20%{
+        content: "Vinícius Santos";
+    }
+    21%, 40%{
+        content: "Vsantos";
+    }
+    41%, 60%{
+        content: "Vini";
+    }
+    61%, 80%{
+        content: "devsantos";
+    }
+    81%, 100%{
+        content: "vsantosdefato";
+    }
 }
 
 .principal .nome-texto p {
@@ -105,7 +165,7 @@
     align-items: center;
     text-align: center;
     font-size: 15px;
-    background-color: #292929;
+    background-color:var(--container);
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
 }
@@ -119,7 +179,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 150px 150px;
-    background-color: #292929; 
+    background-color:var(--container); 
     padding: 100px;
     gap: 30px;
     position: relative;
@@ -144,27 +204,27 @@
 }
 
 .areas .quad1 {
-    background-color: #c6d8f0c0;
+    background-color: var(--primeira-area);
 }
 
 .areas .quad2 {
-    background-color: #b0e0e6cb;
+    background-color: var(--segunda-area)
 }
 
 .areas .quad3 {
-    background-color: #ffc6c4c5;
+    background-color: var(--terceira-area)
 }
 
 .areas .quad4 {
-    background-color: #d8bfd8d2;
+    background-color: var(--quarta-area)
 }
 
 .areas .quad5 {
-    background-color: #fbffbfce;
+    background-color: var(--quinta-area)
 }
 
 .areas .quad6 {
-    background-color: #ccff99d0;
+    background-color: var(--sexta-area)
 }
 
 /* fazer um root para as cores iguais do projeto */
@@ -175,7 +235,7 @@
     height: 150px;
     justify-content: center;
     align-items: center;
-    background-color: #292929;
+    background-color:var(--container);
 }
 
 .divisoria img {
@@ -206,7 +266,7 @@
     width: auto;
     padding: 20px;
     gap: 40px;
-    background-color: #292929;
+    background-color:var(--container);
 }
 
 .areas-extenso .retangulo-area {
@@ -222,27 +282,27 @@
 }
 
 .areas-extenso .retan1 {
-    background-color: #c6d8f0c0;
+    background-color: var(--primeira-area)
 }
 
 .areas-extenso .retan2 {
-    background-color: #b0e0e6cb;
+    background-color: var(--segunda-area)
 }
 
 .areas-extenso .retan3 {
-    background-color: #ffc6c4c5;
+    background-color: var(--terceira-area)
 }
 
 .areas-extenso .retan4 {
-    background-color: #d8bfd8d2;
+    background-color: var(--quarta-area)
 }
 
 .areas-extenso .retan5 {
-    background-color: #fbffbfce;
+    background-color: var(--quinta-area)
 }
 
 .areas-extenso .retan6 {
-    background-color: #ccff99d0;
+    background-color: var(--sexta-area)
 }
 
 .rodape {
@@ -251,7 +311,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #636363;
+    background-color:var(--header-e-rodape);
 
 }
 
