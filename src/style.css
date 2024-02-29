@@ -67,28 +67,43 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
 
 }
 
-/* .principal .perfis img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-} */
-
-.principal .perfis .vsantos-personagem {
+.principal .perfis .vsantos-frente , .vsantos-atras {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 8px solid #5c53ad;
+    position: absolute;
+    
+} 
+
+.principal .perfis .vsantos-frente{
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.principal .perfis .vsantos-atras{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.principal:hover .perfis{
+    transform: rotateY(180deg);
 }
 
 .principal .nome-texto {
-    margin-top: 150px;
-    padding-right: 35px;
+    margin-top: 120px;
+    margin-right: 40px;
     width: 50%;
     height: 180px;
     text-align: justify;
+    
 }
 
 .principal .nome-texto .digitando{
@@ -171,7 +186,7 @@
 }
 
 .apresentacao-vsantos .texto{
-    height: 60px;
+    height: 110px;
     width: 900px;
 }
 
@@ -240,8 +255,6 @@
     background-color: var(--sexta-area)
 }
 
-/* fazer um root para as cores iguais do projeto */
-
 .divisoria {
     display: flex;
     width: auto;
@@ -292,6 +305,19 @@
     -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.areas-extenso .retangulo-area .retangulo-texto{
+    /* background-color: #5c53ad; */
+    color: black;
+    text-align: start;
+    font-size: 15px;
+    padding: 30px;
+    word-wrap: break-word;
 }
 
 .areas-extenso .retan1 {
