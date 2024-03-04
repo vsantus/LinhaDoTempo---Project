@@ -216,6 +216,10 @@
     width: 120px;
 }
 
+.areas .bitcoin img{
+    width: 100px;
+}
+
 .areas .quadrado-area a{
     font-size: 20px;
     padding-bottom: 15px;
@@ -294,7 +298,7 @@
 
 .areas-extenso .retangulo-area {
     width: 90%;
-    height: 600px;
+    height: 400px;
     background-color: darkkhaki;
     padding: 10px;
     border: 1px solid black;
@@ -306,10 +310,11 @@
     justify-content: space-between ;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
 }
 
+
 .areas-extenso .retangulo-area .retangulo-texto{
-    /* background-color: #5c53ad; */
     color: black;
     text-align: start;
     font-size: 15px;
